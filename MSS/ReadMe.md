@@ -29,6 +29,7 @@ ALGORITHM
 
 Compare all possible subsequence.
 
+
 **2. Time complexity O(NlogN)**
 
 *Divide*
@@ -42,6 +43,7 @@ Find right part max subsequence sum.
 Find mid part max subsequence sum.
 
 compare three and decide max.
+
 
 **3. Time complexity O(N)**
 
