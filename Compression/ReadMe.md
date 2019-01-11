@@ -42,13 +42,13 @@ COMPRESSED FILE COMPOTISION
 
 * **original characters** : be written according to the order of visiting the Huffman Tree as DFS first with left child.
 
-* **length of encoded key about Huffman Tree composition & remainder after the length is divided by 8** : be written for reading right encoded key.
+* **length of encoded keys about Huffman Tree composition & remainder after the length is divided by 8** : be written for reading right encoded keys.
 
-* **encoded key about Huffman Tree composition** 
+* **encoded keys about Huffman Tree composition** 
 
-* **length of encoded key about original text & remainder after the length is divided by 8** : be written for reading right encoded key.
+* **length of encoded keys about original text & remainder after the length is divided by 8** : be written for reading right encoded keys.
 
-* **encoded key about original text**
+* **encoded keys about original string**
 
 ---
 
@@ -65,7 +65,7 @@ ENCODING METHOD
 
     3. Apply the above process again, on the new internal node and on the remaining nodes. Repeat this process until only one node remains, which is the root of the Huffman tree.
 
-* *Encoded Key About Huffman Tree Composition*
+* *Encoded Keys About Huffman Tree Composition*
 
     While visiting Huffman Tree as DFS with left child priority, the node is represented as 0 and 1 in order of visiting.
 
@@ -73,11 +73,21 @@ ENCODING METHOD
 
     So the composition of Huffman Tree is encoded to binary number.
 
-* *Encoded Key About Original Text*
+* *Encoded Keys About Original string*
 
     Convert each character into Huffman Code.
 
-* *Write Binary Encoded key on the file*
+* *Write Binary Encoded keys on the file*
 
     After dividing binary number into 8 digits, convert 8 digits into one ASCII code.
 
+---
+
+DECODING METHOD
+---
+
+1. Read the original characters and save them in order.
+
+2. <U>Create Huffman Tree</U> by reading the encoded keys about Huffman Tree composition. At this time, if I arrive at the leaf node of the tree, the original character which is stored previously is inserted into the current leaf node. 
+
+3. <U>Decode encoded keys about original string</U>: When 0 is entered, move to the left child node. When 1 is entered, move to the right child node. If I reach at the leaf node of Huff Tree, print the original character stored in this node. Then goes up to the root of the Huff Tree.
