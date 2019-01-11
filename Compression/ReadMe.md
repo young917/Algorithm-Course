@@ -55,5 +55,29 @@ COMPRESSED FILE COMPOTISION
 ENCODING METHOD
 ---
 
-**Idea Sketch**
+* *Build Huffman Tree*
+
+    ...refered to Wikipedia
+    
+    1. The leaf nodes containing the probabilities of the symbol they represent.
+
+    2. Take the two nodes with smallest probability, and create a new internal node having these two nodes as children. The weight of the new node is set to the sum of the weight of the children. 
+
+    3. Apply the above process again, on the new internal node and on the remaining nodes. Repeat this process until only one node remains, which is the root of the Huffman tree.
+
+* *Encoded Key About Huffman Tree Composition*
+
+    While visiting Huffman Tree as DFS with left child priority, the node is represented as 0 and 1 in order of visiting.
+
+    If the node has children, it is represented as 1. If not, it is represented as 0.
+
+    So the composition of Huffman Tree is encoded to binary number.
+
+* *Encoded Key About Original Text*
+
+    Convert each character into Huffman Code.
+
+* *Write Binary Encoded key on the file*
+
+    After dividing binary number into 8 digits, convert 8 digits into one ASCII code.
 
