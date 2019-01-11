@@ -33,22 +33,27 @@ Then, output file "input.txt.zz" is created.
 
 Then, output file "input.txt.zz.yy" is created.
 
+---
 
 COMPRESSED FILE COMPOTISION
 ---
 
-* **the number of original characters** :
+* **the number of original characters** : be written for reading right original characters.
 
-* **original characters** :
+* **original characters** : be written according to the order of visiting the Huffman Tree as DFS first with left child.
 
-* **length of encoded key about Huffman Tree composition** :
+* **length of encoded key about Huffman Tree composition & remainder after the length is divided by 8** : be written for reading right encoded key.
 
-* **remainder after the length is divided by 8** :
+* **encoded key about Huffman Tree composition** 
 
-* **encoded key about Huffman Tree composition** :
+* **length of encoded key about original text & remainder after the length is divided by 8** : be written for reading right encoded key.
 
-* **length of encoded key about original text** :
+* **encoded key about original text**
 
-* **remainder after the length is divided by 8** :
+---
 
-* **encoded key about original text** :
+ENCODING METHOD
+---
+
+**Idea Sketch**
+
