@@ -88,6 +88,6 @@ DECODING METHOD
 
 1. Read the original characters and save them in order.
 
-2. <U>Create Huffman Tree</U> by reading the encoded keys about Huffman Tree composition. At this time, if I arrive at the leaf node of the tree, the original character which is stored previously is inserted into the current leaf node. 
+2. *Create Huffman Tree* by reading the encoded keys about Huffman Tree composition. At this time, if I arrive at the leaf node of the tree, the original character which is stored previously is inserted into the current leaf node. 
 
-3. <U>Decode encoded keys about original string</U>: When 0 is entered, move to the left child node. When 1 is entered, move to the right child node. If I reach at the leaf node of Huff Tree, print the original character stored in this node. Then goes up to the root of the Huff Tree.
+3. *Decode encoded keys about original string* : When 0 is entered, move to the left child node. When 1 is entered, move to the right child node. If I reach at the leaf node of Huff Tree, print the original character stored in this node. Then goes up to the root of the Huff Tree.
